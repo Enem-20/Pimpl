@@ -14,4 +14,4 @@ add_library(Pimpl INTERFACE)
 message(HEADERS: ${HEADERS})
 
 target_sources(Pimpl INTERFACE ${HEADERS})
-target_include_directories(Pimpl INTERFACE ${HEADERS})
+target_include_directories(Pimpl INTERFACE src)
