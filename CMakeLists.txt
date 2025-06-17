@@ -11,7 +11,7 @@ file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/src/*.cp
 
 add_library(Pimpl INTERFACE)
 
-message(HEADERS: ${HEADERS})
+target_compile_definitions(Pimpl INTERFACE PIMPL_EXPORTS)
 
 target_sources(Pimpl INTERFACE ${HEADERS})
 target_include_directories(Pimpl INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/src)

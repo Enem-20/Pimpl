@@ -3,7 +3,9 @@
 
 #include <memory>
 
-class Pimpl {
+#include "PIMPL_EXPORTS.hpp"
+
+class PIMPL_EXPORT Pimpl {
 public:
     class Impl;
     Pimpl(std::shared_ptr<Impl> impl) 
