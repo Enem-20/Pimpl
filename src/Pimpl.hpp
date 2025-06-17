@@ -6,16 +6,11 @@
 class Pimpl {
 public:
     class Impl;
-    Pimpl(std::shared_ptr<Impl> impl);
+    Pimpl(std::shared_ptr<Impl> impl) 
+    : _impl(impl) {}
     virtual ~Pimpl() {};
 protected:
     std::shared_ptr<Impl> _impl;
 };
-
-Pimpl::Pimpl(std::shared_ptr<Impl> impl) 
-    : _impl(impl)
-{
-
-}
 
 #endif
